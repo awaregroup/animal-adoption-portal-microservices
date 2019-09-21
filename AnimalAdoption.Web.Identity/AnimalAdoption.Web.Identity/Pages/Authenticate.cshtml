@@ -1,0 +1,43 @@
+﻿@page
+@model AnimalAdoption.Web.Identity.Pages.AuthenticateModel
+@{
+    ViewData["Title"] = "Authenticate";
+}
+
+<h1>Authenticate</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 auth-button-grid">
+            <a class="auth-button" href="?handler=SelectTeam&id=pencil&redirectUrl=@Model.RedirectUrl" >
+                <img src="~/images/pencil.jpg" alt="Pencil" />
+            </a>
+        </div>
+        <div class="col-sm-4 auth-button-grid">
+            <a class="auth-button" href="?handler=SelectTeam&id=flower&redirectUrl=@Model.RedirectUrl">
+                    <img src="~/images/flower.jpg" alt="Flower" />
+                </a>
+        </div>
+        <div class="col-sm-4 auth-button-grid">
+            <a class="auth-button" href="?handler=SelectTeam&id=icecream&redirectUrl=@Model.RedirectUrl">
+                    <img src="~/images/icecream.jpg" alt="Ice Cream" />
+                </a>
+        </div>
+        <div class="col-sm-4 auth-button-grid">
+            <a class="auth-button" href="?handler=SelectTeam&id=basketball&redirectUrl=@Model.RedirectUrl">
+                    <img src="~/images/basketball.png" alt="Basket Ball" />
+                </a>
+        </div>
+        <div class="col-sm-4 auth-button-grid">
+            <a class="auth-button" href="?handler=SelectTeam&id=orange&redirectUrl=@Model.RedirectUrl">
+                    <img src="~/images/orange.jpg" alt="orange" />
+                </a>
+        </div>
+        <div class="col-sm-4 auth-button-grid">
+            <a class="auth-button" href="?handler=SelectTeam&id=placeholder&redirectUrl=@Model.RedirectUrl">
+                    <img src="~/images/placeholder.png" alt="placeholder" />
+                </a>
+        </div>
+    </div>
+</div>
+
