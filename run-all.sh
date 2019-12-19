@@ -12,9 +12,9 @@ dotnet build "${SCRIPTPATH}/AnimalAdoption.Service.Cart/AnimalAdoption.Service.C
 dotnet build "${SCRIPTPATH}/AnimalAdoption.Web.Identity/AnimalAdoption.Web.Identity/"
 dotnet build "${SCRIPTPATH}/AnimalAdoption.Service.Image/AnimalAdoption.Service.Image.Api/"
 
-start dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Web.Portal/AnimalAdoption.Web.Portal/"
-start dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.AnimalInformation/AnimalAdoption.Service.AnimalInformation.Api/"
-start dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.Cart/AnimalAdoption.Service.Cart.Api/"
-start dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Web.Identity/AnimalAdoption.Web.Identity/"
-start dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.Image/AnimalAdoption.Service.Image.Api/"
+dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Web.Portal/AnimalAdoption.Web.Portal/" &
+dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.AnimalInformation/AnimalAdoption.Service.AnimalInformation.Api/" &
+dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.Cart/AnimalAdoption.Service.Cart.Api/" &
+dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Web.Identity/AnimalAdoption.Web.Identity/" &
+dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.Image/AnimalAdoption.Service.Image.Api/" &
 read -p "Press enter to continue..."
