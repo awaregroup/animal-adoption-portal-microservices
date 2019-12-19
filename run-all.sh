@@ -17,4 +17,3 @@ dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.AnimalInformation/Ani
 dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.Cart/AnimalAdoption.Service.Cart.Api/" &
 dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Web.Identity/AnimalAdoption.Web.Identity/" &
 dotnet run --project "${SCRIPTPATH}/AnimalAdoption.Service.Image/AnimalAdoption.Service.Image.Api/" &
-read -p "Press enter to continue..."
