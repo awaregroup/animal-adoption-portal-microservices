@@ -13,6 +13,8 @@ Install the following prerequisites:
 - [Visual Studio or Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
 - [Git](https://git-scm.com/download/win)
 
+Clone the Git repository. **Ensure that the destination path contains no spaces.** If your path contains spaces you may get issues generating an "assets.js" file on build or run into other related issues with third party libraries.
+
 This application has only been tested on Windows 10 however it should work within a Linux and OSX environments as well. Talk to your coach if you do not have Windows installed for more information.
 
 Run the "run-all.bat" to run the application locally. Note that you will not be able to debug the solution if another instance of the service is already running.
