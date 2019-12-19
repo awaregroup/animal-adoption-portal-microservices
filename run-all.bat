@@ -1,3 +1,4 @@
+@echo off
 dotnet dev-certs https --trust
 if %errorlevel% neq 0 pause && exit /b %errorlevel%
 
@@ -17,9 +18,9 @@ if %errorlevel% neq 0 pause && exit /b %errorlevel%
 dotnet build "%~dp0\AnimalAdoption.Service.Image\AnimalAdoption.Service.Image.Api\"
 if %errorlevel% neq 0 pause && exit /b %errorlevel%
 
-start dotnet run --project "%~dp0\AnimalAdoption.Web.Portal\AnimalAdoption.Web.Portal\"
-start dotnet run --project "%~dp0\AnimalAdoption.Service.AnimalInformation\AnimalAdoption.Service.AnimalInformation.Api\"
-start dotnet run --project "%~dp0\AnimalAdoption.Service.Cart\AnimalAdoption.Service.Cart.Api\"
-start dotnet run --project "%~dp0\AnimalAdoption.Web.Identity\AnimalAdoption.Web.Identity\"
-start dotnet run --project "%~dp0\AnimalAdoption.Service.Image\AnimalAdoption.Service.Image.Api\"
+start /D "%~dp0\AnimalAdoption.Web.Portal\AnimalAdoption.Web.Portal\" dotnet run
+start /D "%~dp0\AnimalAdoption.Service.AnimalInformation\AnimalAdoption.Service.AnimalInformation.Api\" dotnet run
+start /D "%~dp0\AnimalAdoption.Service.Cart\AnimalAdoption.Service.Cart.Api\" dotnet run
+start /D "%~dp0\AnimalAdoption.Web.Identity\AnimalAdoption.Web.Identity\" dotnet run
+start /D "%~dp0\AnimalAdoption.Service.Image\AnimalAdoption.Service.Image.Api\" dotnet run
 pause
