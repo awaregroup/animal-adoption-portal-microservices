@@ -52,7 +52,7 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
-**/Properties/launchSettings.json
+# **/Properties/launchSettings.json - Normally not checked in, but in order to reduce setup time we have hardcoded these ports.
 
 # StyleCop
 StyleCopReport.xml
