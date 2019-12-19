@@ -17,7 +17,7 @@ Clone the Git repository. **Ensure that the destination path contains no spaces.
 
 This application has only been tested on Windows 10 however it should work within a Linux and OSX environments as well. Talk to your coach if you do not have Windows installed for more information.
 
-Run the "run-all.bat" to run the application locally. Note that you will not be able to debug the solution if another instance of the service is already running.
+Run the "run-all.cmd" to run the application locally. Note that you will not be able to debug the solution if another instance of the service is already running.
 
 When the services are running you can view and interact with the front end portal [here](https://localhost:9001).
 

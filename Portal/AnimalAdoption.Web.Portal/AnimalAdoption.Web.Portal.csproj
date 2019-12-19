@@ -38,8 +38,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\AnimalAdoption.Service.AnimalInformation\AnimalAdoption.Service.AnimalInformation.Contracts\AnimalAdoption.Service.AnimalInformation.Contracts.csproj" />
-    <ProjectReference Include="..\..\AnimalAdoption.Service.Cart\AnimalAdoption.Service.Cart.Contracts\AnimalAdoption.Service.Cart.Contracts.csproj" />
+    <ProjectReference Include="..\..\Cart\AnimalAdoption.Service.Cart.Contracts\AnimalAdoption.Service.Cart.Contracts.csproj" />
+    <ProjectReference Include="..\..\Information\AnimalAdoption.Service.AnimalInformation.Contracts\AnimalAdoption.Service.AnimalInformation.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
