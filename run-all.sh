@@ -2,7 +2,7 @@
 SCRIPTPATH=$(dirname $(readlink -f "$0"))
 
 set -xe
-dotnet dev-certs https
+dotnet dev-certs https --trust
 
 (cd "${SCRIPTPATH}/Portal/AnimalAdoption.Web.Portal/ClientApp" && npm install && cd ${SCRIPTPATH})
 

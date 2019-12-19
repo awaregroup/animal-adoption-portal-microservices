@@ -8,37 +8,37 @@ This repository contains an example web portal for a hypothetical animal adoptio
 # Instructions
 
 Install the following prerequisites:
-- [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - [NodeJS LTS](https://nodejs.org/en/download/)
-- [Visual Studio or Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
+- [Visual Studio Code or Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
 - [Git](https://git-scm.com/download/win)
 
-Clone the Git repository. **Ensure that the destination path contains no spaces.** If your path contains spaces you may get issues generating an "assets.js" file on build or run into other related issues with third party libraries.
+Clone the Git repository. **Ensure that the destination path contains no spaces.** If your path contains spaces you may get issues generating metadata files on build.
 
-This application has only been tested on Windows 10 however it should work within a Linux and OSX environments as well. Talk to your coach if you do not have Windows installed for more information.
+This application has been tested on Windows 10 however with a few tweaks it will work within OSX environments as well. Talk to your coach if you do not have Windows installed for more information.
 
 Run the "run-all.cmd" to run the application locally. Note that you will not be able to debug the solution if another instance of the service is already running.
 
 When the services are running you can view and interact with the front end portal [here](https://localhost:9001).
 
 ## Front End
-- Built in .Net Core 2.2
+- Built in .Net Core 3.1
 - Static website using TypeScript and React
 
 ## Image Service
-- Built in .Net Core 2.2
+- Built in .Net Core 3.1
 - Serves up images of specific animals
 
 ## Identity Service
-- Built in .Net Core 2.2
+- Built in .Net Core 3.1
 - Authenticates a user that selects the correct animal given a picture
 
 ## Cart Service
-- Built in .Net Core 2.2
+- Built in .Net Core 3.1
 - Handles cart state for what animals the user would want to update
 
 ## Animal Information Service
-- Built in .Net Core 2.2
+- Built in .Net Core 3.1
 - Lists avaliable animals for adoption
 
 
