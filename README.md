@@ -4,6 +4,7 @@ This repository contains an example web portal for a hypothetical animal adoptio
 - [.NET Architecture Guides](https://dotnet.microsoft.com/learn/dotnet/architecture-guides)
 - [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
 
+
 # Instructions
 
 Install the following prerequisites:
@@ -37,5 +38,14 @@ When the services are running you can view and interact with the front end porta
 ## Animal Information Service
 - Built in .Net Core 2.2
 - Lists avaliable animals for adoption
+
+
+# Updating this repository
+This repository is normally imported to Azure DevOps. If you need to update your cloned instance with the latest code in GitHub, run the following commands in a terminal window below. Note that if the GitHub remote already exists, you can skip the step to add the remote.
+
+```batch 
+git remote add github https://github.com/awaregroup/animal-adoption-portal
+git pull github master`
+```
 
 
