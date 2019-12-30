@@ -14,4 +14,3 @@ start /D "%~dp0\Information\AnimalAdoption.Service.AnimalInformation.Api\" dotne
 start /D "%~dp0\Cart\AnimalAdoption.Service.Cart.Api\" dotnet watch run -c Debug
 start /D "%~dp0\Identity\AnimalAdoption.Web.Identity\" dotnet watch run -c Debug
 start /D "%~dp0\Image\AnimalAdoption.Service.Image.Api\" dotnet watch run -c Debug
-start https://localhost:9001
