@@ -1,5 +1,5 @@
 #!/bin/sh
-SCRIPTPATH=$(dirname $(readlink -f "$0"))
+SCRIPTPATH=$(dirname $0)
 
 set -xe
 dotnet dev-certs https --trust
