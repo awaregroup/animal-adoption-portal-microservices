@@ -15,7 +15,7 @@ namespace AnimalAdoption.Service.Image.Api.v0
         [Route("{id}")]
         public ActionResult Get(int id)
         {
-            var image = System.IO.File.OpenRead($".\\Images\\{id}.jpg");
+            var image = System.IO.File.OpenRead($"./Images/{id}.jpg");
             return File(image, "image/jpeg");
         }
 
