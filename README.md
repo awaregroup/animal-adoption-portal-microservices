@@ -15,7 +15,9 @@ Install the following prerequisites:
 
 Clone the Git repository. **Ensure that the destination path contains no spaces.** If your path contains spaces you may get issues generating metadata files on build.
 
-This application has been tested on Windows 10 however with a few tweaks it will work within OSX environments as well. Talk to your coach if you do not have Windows installed for more information.
+This application has been tested on Windows 10 however with a few tweaks it will work within MacOS environments as well. Talk to your coach if you do not have Windows installed for more information.
+
+Unfortunately due to the wide variety of Linux configurations we are unable to support Linux users with their specific environment setup. We recommend using a free [Windows Virtual Machine for development.](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
 
 Run the "run-all.cmd" to run the application locally. Note that you will not be able to debug the solution if another instance of the service is already running.
 
