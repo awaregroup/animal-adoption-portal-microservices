@@ -3,8 +3,8 @@ import { Route } from 'react-router';
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { Cart } from './components/Cart';
+import { v4 as uuidv4 } from 'uuid';
 import Cookies from 'js-cookie';
-import uuidv4 from 'uuid/v4'
 
 interface AppState {
     userName?: string;

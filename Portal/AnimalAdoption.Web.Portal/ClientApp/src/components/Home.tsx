@@ -47,7 +47,7 @@ export class Home extends Component<{}, FetchDataState> {
                             <td>{animal.description}</td>
                             <td>{animal.age}</td>
                             <td>{animal.animalType}</td>
-                            <td><img src={`/api/image/${animal.id}`} height="100px" width="100px"/></td>
+                            <td><img alt={animal.name} src={`/api/image/${animal.id}`} height="100px" width="100px"/></td>
                         </tr>
                     )}
                 </tbody>
