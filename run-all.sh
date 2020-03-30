@@ -12,7 +12,7 @@ dotnet build "${SCRIPTPATH}/Cart/AnimalAdoption.Service.Cart.Api/"
 dotnet build "${SCRIPTPATH}/Identity/AnimalAdoption.Web.Identity/"
 dotnet build "${SCRIPTPATH}/Image/AnimalAdoption.Service.Image.Api/"
 
-trap 'killall dotnet' EXIT
+trap 'killall dotnet' SIGTERM
 
 (dotnet watch --project "${SCRIPTPATH}/Portal/AnimalAdoption.Web.Portal/" run &
 dotnet watch --project "${SCRIPTPATH}/Information/AnimalAdoption.Service.AnimalInformation.Api/" run &
