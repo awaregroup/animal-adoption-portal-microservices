@@ -117,6 +117,7 @@
     ],
     "compounds": [
         {
+            "preLaunchTask": "build",
             "presentation": {
                 "hidden": false,
                 "group": "",
