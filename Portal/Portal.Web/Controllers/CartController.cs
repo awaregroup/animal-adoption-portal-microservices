@@ -54,9 +54,10 @@ namespace AnimalAdoption.Web.Portal.Controllers
             }
         }
 
-        [HttpPost]
-        [Route("{cartId}")]
-        public async Task<ActionResult> PostAsync(string cartId, [FromBody]int animalId)
+        // HACK : Visual Studio Online (Beta) support with Chromium 81 (2020-05)
+        [HttpGet]
+        [Route("post/{cartId}/{animalId}")]        
+        public async Task<ActionResult> PostAsync(string cartId, int animalId)
         {
             var jsonInString = JsonConvert.SerializeObject(animalId);
             using (var result = await _httpClient.PostAsync($"{_endpointSettings.Value.CartApi}/api/v0/cart/{cartId}",  new StringContent(jsonInString, Encoding.UTF8, "application/json")))
@@ -82,7 +83,7 @@ namespace AnimalAdoption.Web.Portal.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpDelete]        
         [Route("{cartId}/{animalId}")]
         public async Task<ActionResult> DeleteAsync(string cartId, int animalId)
         {

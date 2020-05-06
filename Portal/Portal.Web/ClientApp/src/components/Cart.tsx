@@ -109,13 +109,8 @@ export class Cart extends Component<CartProps, CartState> {
             ...this.state,
             isLoading: true
         });
-        fetch(`api/cart/${this.props.cartId}`, {
-            method: 'POST',
-            body: JSON.stringify(animalId),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
+        // HACK : Visual Studio Online (Beta) support with Chromium 81 (2020-05)
+        fetch(`api/cart/post/${this.props.cartId}/${animalId}`)
             .then(response => response.json())
             .then(data => {
                 this.setState((state) => {
