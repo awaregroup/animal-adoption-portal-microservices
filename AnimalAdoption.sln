@@ -5,23 +5,23 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cart", "Cart", "{DD924425-751A-47F0-A5DD-6C06BD113A32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.Cart.Api", "Cart\AnimalAdoption.Service.Cart.Api\AnimalAdoption.Service.Cart.Api.csproj", "{149BC4B3-37E4-4B42-B46B-8999681A70F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.Cart.Api", "Cart\Cart.Api\AnimalAdoption.Service.Cart.Api.csproj", "{149BC4B3-37E4-4B42-B46B-8999681A70F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{32089807-6143-4402-B7E3-970FDBF454B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Web.Identity", "Identity\AnimalAdoption.Web.Identity\AnimalAdoption.Web.Identity.csproj", "{433C1678-A6C1-4E43-9873-FBC74A473E7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Web.Identity", "Identity\Identity.Web\AnimalAdoption.Web.Identity.csproj", "{433C1678-A6C1-4E43-9873-FBC74A473E7D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Image", "Image", "{BBD4ECEE-231B-4852-996F-B56820AE783F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.Image.Api", "Image\AnimalAdoption.Service.Image.Api\AnimalAdoption.Service.Image.Api.csproj", "{705D11C0-AC57-4FF3-8A03-CDD913AF81CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.Image.Api", "Image\Image.Api\AnimalAdoption.Service.Image.Api.csproj", "{705D11C0-AC57-4FF3-8A03-CDD913AF81CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Information", "Information", "{F8AA371F-ADC5-4D10-A1F7-220C80083775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.AnimalInformation.Api", "Information\AnimalAdoption.Service.AnimalInformation.Api\AnimalAdoption.Service.AnimalInformation.Api.csproj", "{3754FDBA-6E1E-41D5-8E4F-E62BDCD64E3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.AnimalInformation.Api", "Information\AnimalInformation.Api\AnimalAdoption.Service.AnimalInformation.Api.csproj", "{3754FDBA-6E1E-41D5-8E4F-E62BDCD64E3B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portal", "Portal", "{0D62B67C-60C7-4042-84C9-AE5B00916F63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Web.Portal", "Portal\AnimalAdoption.Web.Portal\AnimalAdoption.Web.Portal.csproj", "{30770DD3-CDF3-4DA4-9A79-E9D785064190}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Web.Portal", "Portal\Portal.Web\AnimalAdoption.Web.Portal.csproj", "{30770DD3-CDF3-4DA4-9A79-E9D785064190}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

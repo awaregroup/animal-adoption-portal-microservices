@@ -4,18 +4,18 @@ SCRIPTPATH=$(dirname $0)
 set -xe
 dotnet dev-certs https --trust
 
-(cd "${SCRIPTPATH}/Portal/AnimalAdoption.Web.Portal/ClientApp" && npm install && cd ../../..)
+(cd "${SCRIPTPATH}/Portal/Portal.Web/ClientApp" && npm install && cd ../../..)
 
-dotnet build "${SCRIPTPATH}/Portal/AnimalAdoption.Web.Portal/"
-dotnet build "${SCRIPTPATH}/Information/AnimalAdoption.Service.AnimalInformation.Api/"
-dotnet build "${SCRIPTPATH}/Cart/AnimalAdoption.Service.Cart.Api/"
-dotnet build "${SCRIPTPATH}/Identity/AnimalAdoption.Web.Identity/"
-dotnet build "${SCRIPTPATH}/Image/AnimalAdoption.Service.Image.Api/"
+dotnet build "${SCRIPTPATH}/Portal/Portal.Web/"
+dotnet build "${SCRIPTPATH}/Information/AnimalInformation.Api/"
+dotnet build "${SCRIPTPATH}/Cart/Cart.Api/"
+dotnet build "${SCRIPTPATH}/Identity/Identity.Web/"
+dotnet build "${SCRIPTPATH}/Image/Image.Api/"
 
 trap 'killall dotnet' SIGTERM
 
-(dotnet watch --project "${SCRIPTPATH}/Portal/AnimalAdoption.Web.Portal/" run &
-dotnet watch --project "${SCRIPTPATH}/Information/AnimalAdoption.Service.AnimalInformation.Api/" run &
-dotnet watch --project "${SCRIPTPATH}/Cart/AnimalAdoption.Service.Cart.Api/" run &
-dotnet watch --project "${SCRIPTPATH}/Identity/AnimalAdoption.Web.Identity/" run &
-dotnet watch --project "${SCRIPTPATH}/Image/AnimalAdoption.Service.Image.Api/" run)
+(dotnet watch --project "${SCRIPTPATH}/Portal/Portal.Web/" run &
+dotnet watch --project "${SCRIPTPATH}/Information/AnimalInformation.Api/" run &
+dotnet watch --project "${SCRIPTPATH}/Cart/Cart.Api/" run &
+dotnet watch --project "${SCRIPTPATH}/Identity/Identity.Web/" run &
+dotnet watch --project "${SCRIPTPATH}/Image/Image.Api/" run)

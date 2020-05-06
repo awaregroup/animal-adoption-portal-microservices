@@ -7,7 +7,7 @@ This service serves up the web portal that combines all the services together fo
 
 *or*
 
-- Type `npm install  -c .\AnimalAdoption.Web.Portal\ClientApp`
+- Type `npm install  -c .\Portal.Web\ClientApp`
 - Type `dotnet build` in the console.
 
 ## Run instructions
