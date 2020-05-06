@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using AnimalAdoption.Web.Portal.Model;
 using AnimalAdoption.Web.Portal.Plumbing;
@@ -53,10 +55,11 @@ namespace AnimalAdoption.Web.Portal.Controllers
         }
 
         [HttpPost]
-        [Route("{cartId}/{animalId}")]
-        public async Task<ActionResult> PostAsync(string cartId, int animalId)
+        [Route("{cartId}")]
+        public async Task<ActionResult> PostAsync(string cartId, [FromBody]int animalId)
         {
-            using (var result = await _httpClient.PostAsync($"{_endpointSettings.Value.CartApi}/api/v0/cart/{cartId}/{animalId}", null))
+            var jsonInString = JsonConvert.SerializeObject(animalId);
+            using (var result = await _httpClient.PostAsync($"{_endpointSettings.Value.CartApi}/api/v0/cart/{cartId}",  new StringContent(jsonInString, Encoding.UTF8, "application/json")))
             {
                 if (result.IsSuccessStatusCode)
                 {

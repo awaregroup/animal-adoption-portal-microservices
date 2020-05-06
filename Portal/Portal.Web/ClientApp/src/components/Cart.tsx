@@ -5,7 +5,7 @@ interface CartProps {
 }
 
 interface CartState {
-    animals? : Animals[]
+    animals?: Animals[]
     cart?: UserCart
     isLoading: boolean
 }
@@ -22,11 +22,11 @@ interface UserCart {
 
 interface CartContent {
     id: number
-    quantity : number
+    quantity: number
 }
 
 
-export class Cart extends Component<CartProps, CartState> {  
+export class Cart extends Component<CartProps, CartState> {
 
     constructor(props: any) {
         super(props);
@@ -34,7 +34,7 @@ export class Cart extends Component<CartProps, CartState> {
         this.removeAnimal = this.removeAnimal.bind(this);
 
         this.state = {
-            isLoading : true
+            isLoading: true
         }
 
         fetch('api/animalinformation')
@@ -68,7 +68,7 @@ export class Cart extends Component<CartProps, CartState> {
             this.setState({
                 ...this.state,
                 cart: undefined,
-                isLoading : true
+                isLoading: true
             });
             fetch(`api/cart/${this.props.cartId}`)
                 .then(response => response.json())
@@ -89,7 +89,9 @@ export class Cart extends Component<CartProps, CartState> {
             ...this.state,
             isLoading: true
         })
-        fetch(`api/cart/${this.props.cartId}/${animalId}`, { method: 'DELETE' })
+        fetch(`api/cart/${this.props.cartId}/${animalId}`, {
+            method: 'DELETE'
+        })
             .then(response => response.json())
             .then(data => {
                 this.setState((state) => {
@@ -107,7 +109,13 @@ export class Cart extends Component<CartProps, CartState> {
             ...this.state,
             isLoading: true
         });
-        fetch(`api/cart/${this.props.cartId}/${animalId}`, { method: 'POST' })
+        fetch(`api/cart/${this.props.cartId}`, {
+            method: 'POST',
+            body: JSON.stringify(animalId),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
             .then(response => response.json())
             .then(data => {
                 this.setState((state) => {

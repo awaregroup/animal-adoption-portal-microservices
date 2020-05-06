@@ -27,8 +27,8 @@ namespace AnimalAdoption.Service.Cart.Api.Controllers
         }
 
         [HttpPost]
-        [Route("{cartId}/{animalId}")]
-        public ActionResult<Contracts.v0.Cart> Post(string cartId, int animalId)
+        [Route("{cartId}")]
+        public ActionResult<Contracts.v0.Cart> Post(string cartId, [FromBody]int animalId)
         {
             return _cartLogic.AddAnimal(cartId, animalId);
         }

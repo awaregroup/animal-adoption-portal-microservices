@@ -57,7 +57,7 @@ namespace AnimalAdoption.Service.Cart.Api
 
                 if (domainCart == null)
                 {
-                    return null;
+                    return new Contracts.v0.Cart();
                 };
 
                 if (domainCart.CartContents.TryGetValue(animalId, out int quantity))
