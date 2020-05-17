@@ -10,7 +10,7 @@ This repository contains an example web portal for a hypothetical animal adoptio
 Install the following prerequisites:
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - [NodeJS LTS](https://nodejs.org/en/download/)
-- [Visual Studio Code or Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
+- [Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
 - [Git](https://git-scm.com/download/win)
 
 Clone the Git repository. **Ensure that the destination path contains no spaces.** If your path contains spaces you may get issues generating metadata files on build.
