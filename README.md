@@ -24,23 +24,23 @@ Run the "run-all.cmd" to run the application locally. Note that you will not be 
 When the services are running you can view and interact with the front end portal [here](https://localhost:9001).
 
 ## Front End
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Static website using TypeScript and React
 
 ## Image Service
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Serves up images of specific animals
 
 ## Identity Service
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Authenticates a user that selects the correct animal given a picture
 
 ## Cart Service
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Handles cart state for what animals the user would want to update
 
 ## Animal Information Service
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Lists avaliable animals for adoption
 
 
