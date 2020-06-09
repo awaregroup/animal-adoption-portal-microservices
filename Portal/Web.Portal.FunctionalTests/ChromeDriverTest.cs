@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
@@ -8,23 +8,23 @@ using System;
 namespace AnimalAdoption.Web.Portal.FunctionalTests
 {
     [TestClass]
-    public class EdgeDriverTest
+    public class ChromeDriverTest
     {
         // In order to run the below test(s), 
-        // please follow the instructions from http://go.microsoft.com/fwlink/?LinkId=619687
-        // to install Microsoft WebDriver.
+        // please follow the instructions from https://chromedriver.chromium.org/downloads
+        // to install Chrome WebDriver.
 
-        private EdgeDriver _driver;
+        private ChromeDriver _driver;
 
         [TestInitialize]
-        public void EdgeDriverInitialize()
+        public void ChromeDriverInitialize()
         {
-            // Initialize edge driver 
-            var options = new EdgeOptions
+            // Initialize chrome driver 
+            var options = new ChromeOptions
             {
                 PageLoadStrategy = PageLoadStrategy.Normal
             };
-            _driver = new EdgeDriver(options);
+            _driver = new ChromeDriver(options);
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace AnimalAdoption.Web.Portal.FunctionalTests
             // Remember to set this in the build pipeline
             var url = Environment.GetEnvironmentVariable("ANIMAL_ADOPTION_FUNCTIONAL_TEST_PATH") ?? "http://localhost:9000";            
             _driver.Url = url;
-            var xPathToCheck = "//table/tbody/tr[1]/td[1]";            
+            var xPathToCheck = "/html/body/div/div/div/div/table/tbody/tr[1]/td[2]";
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
             var returnedAnimal = wait.Until((d) =>
             {
@@ -43,7 +43,7 @@ namespace AnimalAdoption.Web.Portal.FunctionalTests
         }
 
         [TestCleanup]
-        public void EdgeDriverCleanup()
+        public void ChromeDriverCleanup()
         {
             _driver.Quit();
         }

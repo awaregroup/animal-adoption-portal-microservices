@@ -10,7 +10,7 @@ This repository contains an example web portal for a hypothetical animal adoptio
 Install the following prerequisites:
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - [NodeJS LTS](https://nodejs.org/en/download/)
-- [Visual Studio Code or Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
+- [Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
 - [Git](https://git-scm.com/download/win)
 
 Clone the Git repository. **Ensure that the destination path contains no spaces.** If your path contains spaces you may get issues generating metadata files on build.
@@ -24,23 +24,23 @@ Run the "run-all.cmd" to run the application locally. Note that you will not be 
 When the services are running you can view and interact with the front end portal [here](https://localhost:9001).
 
 ## Front End
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Static website using TypeScript and React
 
 ## Image Service
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Serves up images of specific animals
 
 ## Identity Service
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Authenticates a user that selects the correct animal given a picture
 
 ## Cart Service
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Handles cart state for what animals the user would want to update
 
 ## Animal Information Service
-- Built in .Net Core 3.1
+- Built in .NET Core 3.1
 - Lists avaliable animals for adoption
 
 
