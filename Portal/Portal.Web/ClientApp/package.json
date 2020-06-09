@@ -1,0 +1,53 @@
+{
+  "name": "AnimalAdoption.Web.Portal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/reactstrap": "8.4.2",
+    "@types/js-cookie": "^2.2.6",
+    "bootstrap": "^4.4.1",
+    "jquery": "3.5.1",
+    "js-cookie": "^2.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "reactstrap": "^8.4.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^7.0.3",
+    "ajv": "^6.12.2",
+    "cross-env": "^7.0.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "rimraf ./build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src/"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

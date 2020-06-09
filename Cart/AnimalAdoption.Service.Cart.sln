@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Service.Cart.Api", "AnimalAdoption.Service.Cart.Api\AnimalAdoption.Service.Cart.Api.csproj", "{AE0B6EB9-C0AD-4474-8B57-B3CF5CEBAC90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Service.Cart.Api", "Cart.Api\AnimalAdoption.Service.Cart.Api.csproj", "{AE0B6EB9-C0AD-4474-8B57-B3CF5CEBAC90}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Service.Cart.Contracts", "AnimalAdoption.Service.Cart.Contracts\AnimalAdoption.Service.Cart.Contracts.csproj", "{BE9E0460-9D94-478E-956B-98A85733EA5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Service.Cart.Contracts", "Cart.Contracts\AnimalAdoption.Service.Cart.Contracts.csproj", "{BE9E0460-9D94-478E-956B-98A85733EA5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.Cart.UnitTests", "AnimalAdoption.Service.Cart.UnitTests\AnimalAdoption.Service.Cart.UnitTests.csproj", "{098D55C0-888B-4039-925C-F4659CA083CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.Cart.UnitTests", "Cart.UnitTests\AnimalAdoption.Service.Cart.UnitTests.csproj", "{098D55C0-888B-4039-925C-F4659CA083CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.Cart.Domain", "AnimalAdoption.Service.Cart.Domain\AnimalAdoption.Service.Cart.Domain.csproj", "{9FD015D9-BBBD-44C3-BC94-07C22791DEA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalAdoption.Service.Cart.Domain", "Cart.Domain\AnimalAdoption.Service.Cart.Domain.csproj", "{9FD015D9-BBBD-44C3-BC94-07C22791DEA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Service.AnimalInformation.Contracts", "AnimalAdoption.Service.AnimalInformation.Contracts\AnimalAdoption.Service.AnimalInformation.Contracts.csproj", "{73522C05-940E-4827-9126-3ED71FD23D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Service.AnimalInformation.Contracts", "AnimalInformation.Contracts\AnimalAdoption.Service.AnimalInformation.Contracts.csproj", "{73522C05-940E-4827-9126-3ED71FD23D35}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Service.AnimalInformation.Api", "AnimalAdoption.Service.AnimalInformation.Api\AnimalAdoption.Service.AnimalInformation.Api.csproj", "{419BC25C-AE4C-4352-90FE-2D02AC00AF90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Service.AnimalInformation.Api", "AnimalInformation.Api\AnimalAdoption.Service.AnimalInformation.Api.csproj", "{419BC25C-AE4C-4352-90FE-2D02AC00AF90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
