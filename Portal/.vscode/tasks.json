@@ -8,6 +8,7 @@
             "args": [
                 "build",
                 "${workspaceFolder}/Portal.Web/AnimalAdoption.Web.Portal.csproj",
+                "--interactive",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

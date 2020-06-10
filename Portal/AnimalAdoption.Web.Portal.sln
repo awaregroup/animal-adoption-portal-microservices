@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Web.Portal", "Web.Portal\AnimalAdoption.Web.Portal.csproj", "{82C25B25-D76C-47BF-8541-8361072CE4E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Web.Portal", "Portal.Web\AnimalAdoption.Web.Portal.csproj", "{82C25B25-D76C-47BF-8541-8361072CE4E5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalAdoption.Web.Portal.FunctionalTests", "Web.Portal.FunctionalTests\AnimalAdoption.Web.Portal.FunctionalTests.csproj", "{CBA5A617-99DB-4052-9A7A-32F72844D6C4}"
 EndProject

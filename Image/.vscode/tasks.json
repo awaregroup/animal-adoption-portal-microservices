@@ -7,6 +7,7 @@
             "type": "process",
             "args": [
                 "build",
+                "--interactive",
                 "${workspaceFolder}/Image.Api/AnimalAdoption.Service.Image.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
